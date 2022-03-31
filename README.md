@@ -5,7 +5,7 @@ Collection of fake news detection methods and a practical evaluation framework
 
 Note: Papers for fact verification will be added later
 
-- Multi-view learning with distinguishable feature fusion for rumor detection [Paper]([Multi-view learning with distinguishable feature fusion for rumor detection - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0950705121011552)) Knowledge-Based System 2022 Context-aware fake news detection
+- Multi-view learning with distinguishable feature fusion for rumor detection [Paper](https://www.sciencedirect.com/science/article/pii/S0950705121011552) Knowledge-Based System 2022 Context-aware fake news detection
 
 - - Based on GCAN (ACL 2020) and BiGCN(AAAI 2020), this paper proposes a user-aspect fake news detection model with multi-view features, including the profile view, structural view, and temporal view. A hierarchical fusion module with view-wise attention and capsule attention is adopted to fuse features from each view. 
 
