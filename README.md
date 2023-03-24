@@ -8,13 +8,13 @@ Note: Papers for fact verification will be added later
 
 - Multi-view learning with distinguishable feature fusion for rumor detection [Paper](https://www.sciencedirect.com/science/article/pii/S0950705121011552) Knowledge-Based System 2022 Context-aware fake news detection
 
-- - Based on GCAN (ACL 2020) and BiGCN(AAAI 2020), this paper proposes a user-aspect fake news detection model with multi-view features, including the profile view, structural view, and temporal view. A hierarchical fusion module with view-wise attention and capsule attention is adopted to fuse features from each view. 
+-  Based on GCAN (ACL 2020) and BiGCN(AAAI 2020), this paper proposes a user-aspect fake news detection model with multi-view features, including the profile view, structural view, and temporal view. A hierarchical fusion module with view-wise attention and capsule attention is adopted to fuse features from each view. 
 
 - Domain Adaptive Fake News Detection via Reinforcement Learning [Paper](https://arxiv.org/abs/2202.08159) WWW 2022 domain adaption
 
-- - cross-domain fake news detection
-  - a relatively simple encoder: BERT + attention + lstm
-  - RL-based domain adaption: Compared to adversarial learning based domain adaption, the RL agent directly transforms the representation from the original domain to domain-invariant representations
+-  cross-domain fake news detection
+   a relatively simple encoder: BERT + attention + lstm
+   RL-based domain adaption: Compared to adversarial learning based domain adaption, the RL agent directly transforms the representation from the original domain to domain-invariant representations
 
 - (*) "This is Fake! Shared it by Mistake": Assessing the Intent of Fake News Spreaders [Paper](https://arxiv.org/pdf/2202.04752.pdf) WWW 2022 Fake News Detection, Intent Detection
 
