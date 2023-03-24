@@ -95,56 +95,76 @@ The idea of combining deep learning and hand-crafted features is interesting. Th
 
 A temporal-propagation-based fake news detection framework that fuses structure, content semantics, and temporal information
 The propagation pattern of news is modeled as a **continuous** dynamic news propagation network
+
 For the encoder part, this model adopts a temporal GAT-based model and a temporal difference network to capture the variational information in the series of graphs. 
 
 * Rumour Detection via Zero-shot Cross-lingual Transfer Learning [Paper](https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_661.pdf) ECML-PKDD 2021 Multi-Languages
 
 Zero-shot classification with no labels in the target domain
+
 teacher-student self-training by generating "silver labels"
 
 * Early Detection of Fake News with Multi-source Weak Social Supervision [Paper](https://asu.pure.elsevier.com/en/publications/early-detection-of-fake-news-with-multi-source-weak-social-superv) ECML-PKDD 2020 Weak social supervision
 
 A label weighting network to determine the weight of each soft label
+
 Defining several soft labels using feature engineerings such as sentiment score, credibility score, and bias score
 
 * GCAN: Graph-aware Co-Attention Networks for Explainable Fake News Detection on Social Media [Paper](https://arxiv.org/abs/2004.11648) [Code](https://github.com/l852888/GCAN) ACL 2020 
 
 A cross-modality co-attention framework for content, propagation, and user relationship
+
 Limited explicability from attention modules
 
 * DETERRENT: Knowledge Guided Graph Attention Network for Detecting Healthcare Misinformation [Paper](https://dl.acm.org/doi/pdf/10.1145/3394486.3403092) [Code](https://github.com/cuilimeng/DETERRENT) KDD 2020
 
 Social context-based misinformation detection is not suitable for medical area
+
 Fusing knowledge graph and news articles by article-entity bipartite graph
+
 A heterogeneous graph encoder based on RGCN and GAT
+
 Adopting BPR loss to deal with negative relations
 
 * FANG: Leveraging Social Context for Fake News Detection Using Graph Representation [Paper](https://arxiv.org/abs/2008.07939) [Code](https://github.com/nguyenvanhoang7398/FANG) CIKM 2020(best paper) Fake News Detection
 
 A relatively complete fake news detection including complicated feature engineerings such as stance detection and sentiment analysis
+
 Using GraphSage as the encoder for inductive learning
+
 Considering user, source, and news together
 
 * Category-controlled Encoder-Decoder for Fake News Detection [Paper](https://ieeexplore.ieee.org/document/9511228) TKDE 2020  
 category-controlled encoder
+
 sequence encoding
+
 guided matching
+
 fusion merging
+
 category-controlled decoder
+
 pattern-shared unit
+
 decoder
+
 restriction unit
 
 * Weak Supervision for Fake News Detection via Reinforcement Learning [Paper](https://arxiv.org/abs/1912.12520) [Code](https://github.com/yaqingwang/WeFEND-AAAI20) AAAI 2020 Weakly Supervised Fake News Detection
 
 Focusing on a specific scenario: News coming from Wechat with users' reports as noisy labels
+
 Embracing on-policy RL to select highly confident labels
 
 * Rumor Detection on Social Media with Bi-Directional Graph Convolutional Networks [Paper](https://ojs.aaai.org//index.php/AAAI/article/view/5393) [Code](https://github.com/TianBian95/BiGCN) AAAI 2020 rumor detection
 
 A widely adopted baseline for rumor detection: BiGCN
+
 Each event is represented as a tree-structured graph, with a news post as the root node and Twitter posts as the child nodes.
+
 Adopting root-enhanced GCN as the encoder
+
 Adopting DropEdge to enhance the robustness
 
 * ReCOVery: A Multimodal Repository for COVID-19 News Credibility Research [Paper](https://arxiv.org/pdf/2006.05557.pdf) CIKM 2020 Benchmark
@@ -154,7 +174,9 @@ A multi-modal fake news detection benchmark for COVID-19
 * Rumor Detection on Social Media with Graph Structured Adversarial Learning [Paper](https://www.ijcai.org/proceedings/2020/197) IJCAI 2020 Rumor Detection
 
 Considering an adversarial setting(social interaction) for rumor detection
+
 The adversarial attack is used as a regularizer to boost robust model.
+
 The experiment part doesn't include a robustness test 
 
 * Defending Against Neural Fake News [Paper](https://arxiv.org/abs/1905.12616) [Code](https://rowanzellers.com/grover) NIPS 2019 Fake News Generation
@@ -164,17 +186,24 @@ A fake news GPT that also utilizes CommonCrawl to achieve vast amounts of unlabe
 * Jointly embedding the local and global relations of heterogeneous graph for rumor detection [Paper](https://arxiv.org/abs/1909.04465) [Code](https://github.com/chunyuanY/RumorDetection) ICDM 2019 Rumor Detection
 
 A drawback of the tree-structured graph adopted by BiGCN: It ignores the relationship across different news posts
+
 This paper adopts hierarchical attention to capture both local and global relations for rumors.
+
 first-level attention: QKV attention to capture the inner-post relationship for retweets
+
 second-level attention: a GAT to capture structural relationships among cross-post relationships
+
 The performance is great, even better than some later work 
 
 * defend: Explainable fake news detection [Paper](https://pike.psu.edu/publications/kdd19.pdf) [Code](https://github.com/cuilimeng/dEFEND-web) KDD 2019 fake news detection
 
 An important baseline for context-based fake news detection
+
 Adopting co-attention to capture the correlation between texts and comments
 
 * Detect Rumor and Stance Jointly by Neural Multi-task Learning [Paper](https://dl.acm.org/doi/pdf/10.1145/3184558.3188729) WWW 2018 Multi-task learning
 Learning models for rumor detection and stance classification at the same time
+
 GRU-based encoder
+
 a shared layer + task-specific layers
