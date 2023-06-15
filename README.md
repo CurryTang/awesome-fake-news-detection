@@ -1,8 +1,8 @@
 # awesome-fake-news-detection
 
-Collection of fake news detection methods and a practical evaluation framework
+Collection of fake news detection papers
 
-## Awesome Fake News &Rumor Detection
+## Awesome Fake News & Rumor Detection
 
 Note: Papers for fact verification will be added later
 
